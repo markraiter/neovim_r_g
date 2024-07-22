@@ -25,7 +25,10 @@ vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
           filesystem = {
               filtered_items = {
                   hide_dotfiles = false,
-                  hide_gitignore = false,
+                  hide_gitignored = false,
+                  hide_by_name = {
+                      ".git",
+                  },
               },
           }
       })

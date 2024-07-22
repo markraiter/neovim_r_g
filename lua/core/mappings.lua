@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 
 -- NeoTree
-vim.keymap.set('n', '<leader>e', ':Neotree float focus<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree float reveal<CR>')
+vim.keymap.set('n', '<leader>E', ':Neotree left reveal<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree float git_status<CR>')
 
 -- Other
@@ -32,3 +33,8 @@ vim.api.nvim_set_keymap('n', '<leader>Y', 'CopyLineToSystemBuffer', { noremap = 
 vim.api.nvim_set_keymap('n', '<leader>p', 'PasteFromSystemBufferAfter', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>P', 'PasteFromSystemBufferBefore', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>p', 'PasteFromSystemBuffer', { noremap = true, silent = true })
+
+-- Terminal
+vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
+vim.keymap.set('n', '<leader>th', ':ToggleTerm direction=horizontal<CR>')
+vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=40<CR>')

@@ -20,7 +20,7 @@ require("lazy").setup({
 	{ 'phaazon/hop.nvim' },
 {
 	"nvim-neo-tree/neo-tree.nvim",
-	branch = "v2.x",
+	branch = "v3.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
@@ -67,4 +67,5 @@ require("lazy").setup({
     tag = '0.1.8',
     dependencies = { 'nvim-lua/plenary.nvim' }
 },
+{'akinsho/toggleterm.nvim', version = "*", config = true},
 })
