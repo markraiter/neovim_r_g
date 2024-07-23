@@ -20,6 +20,10 @@ vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
         {text = " ", texthl = "DiagnosticSignInfo"})
       vim.fn.sign_define("DiagnosticSignHint",
         {text = "󰌵", texthl = "DiagnosticSignHint"})
+      vim.fn.sign_define("GitSignsAdd",
+        {text = " ", texthl = "GitSignsAdd"})
+      vim.fn.sign_define("GitSignsChange",
+        {text = " ", texthl = "GitSignsChange"})
 
       require("neo-tree").setup({
           filesystem = {

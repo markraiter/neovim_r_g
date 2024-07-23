@@ -32,6 +32,8 @@ require("lazy").setup({
 { 'nvim-treesitter/nvim-treesitter' },
 { 'neovim/nvim-lspconfig' },
 { 'joshdick/onedark.vim' },
+{ 'Mofiqul/dracula.nvim' },
+{ 'folke/tokyonight.nvim' },
 { 'hrsh7th/cmp-nvim-lsp' },
 { 'hrsh7th/cmp-buffer' },
 { 'hrsh7th/cmp-path' },
@@ -68,4 +70,6 @@ require("lazy").setup({
     dependencies = { 'nvim-lua/plenary.nvim' }
 },
 {'akinsho/toggleterm.nvim', version = "*", config = true},
+{ 'simrat39/rust-tools.nvim' },
+{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
 })

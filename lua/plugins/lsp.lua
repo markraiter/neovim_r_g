@@ -20,6 +20,15 @@ lspconfig.rust_analyzer.setup {
 }
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
+vim.keymap.set('x', '<Leader>lR', function()
+    local selected_text = vim.fn.getreg('"')
+    if selected_text ~= '' then
+        local opts = {buffer = vim.api.nvim_get_current_buf()}
+        vim.lsp.buf.range_rename(0, opts, selected_text)
+    else
+        print('No text selected for rename')
+    end
+end, opts)
 vim.keymap.set('n', '<leader>lD', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
