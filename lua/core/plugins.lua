@@ -72,4 +72,5 @@ require("lazy").setup({
 {'akinsho/toggleterm.nvim', version = "*", config = true},
 { 'simrat39/rust-tools.nvim' },
 { "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
+{'hrsh7th/vim-vsnip'},
 })
