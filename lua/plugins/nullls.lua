@@ -11,7 +11,6 @@ null_ls.setup({
         } },
         null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.ltrs,
         null_ls.builtins.formatting.rustfmt,
         null_ls.builtins.formatting.gofmt,
         null_ls.builtins.formatting.prettierd.with { filetypes = {

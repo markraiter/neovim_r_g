@@ -14,10 +14,6 @@ vim.keymap.set('n', '<leader>X', ':BufferLineCloseRight<CR>')
 vim.keymap.set('n', '<leader>s', ':BufferLineSortByTabs<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
--- Markdown Preview
-vim.api.nvim_set_keymap('n', '<leader>mp', ':MarkdownPreview<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>ms', ':MarkdownPreviewStop<CR>', { noremap = true, silent = true })
-
 -- Tabs
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
@@ -42,3 +38,15 @@ vim.api.nvim_set_keymap('v', '<leader>p', 'PasteFromSystemBuffer', { noremap = t
 vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
 vim.keymap.set('n', '<leader>tt', ':ToggleTerm direction=horizontal<CR>')
 vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=40<CR>')
+
+-- TODO Comments
+vim.keymap.set("n", "]t", function()
+  require("todo-comments").jump_next()
+end, { desc = "Next todo comment" })
+
+vim.keymap.set("n", "[t", function()
+  require("todo-comments").jump_prev()
+end, { desc = "Previous todo comment" })
+
+vim.keymap.set("n", "]t", function()
+  require("todo-comments").jump_next({keywords = { "ERROR", "WARNING" }})
