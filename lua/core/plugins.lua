@@ -29,6 +29,7 @@ require("lazy").setup({
 		"s1n7ax/nvim-window-picker"
 		}
 	},
+{ 'ray-x/lsp_signature.nvim' },
 { 'nvim-treesitter/nvim-treesitter' },
 { 'neovim/nvim-lspconfig' },
 { 'joshdick/onedark.vim' },

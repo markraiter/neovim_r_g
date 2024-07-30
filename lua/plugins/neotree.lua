@@ -25,14 +25,29 @@ vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
       vim.fn.sign_define("GitSignsChange",
         {text = " ", texthl = "GitSignsChange"})
 
-      require("neo-tree").setup({
-          filesystem = {
-              filtered_items = {
-                  hide_dotfiles = false,
-                  hide_gitignored = false,
-                  hide_by_name = {
-                      ".git",
-                  },
-              },
-          }
-      })
+require("neo-tree").setup({
+    filesystem = {
+        filtered_items = {
+            hide_dotfiles = false,
+            hide_gitignored = false,
+            hide_by_name = {
+                ".git",
+            },
+        },
+        icons = {
+            default = "",
+            symlink = "",
+            git = {
+                staged = "",
+                unstaged = "",
+                untracked = "",
+                deleted = "",
+                ignored = "",
+            },
+            folder = {
+                default = "",
+                open = "",
+            },
+        },
+    }
+})
