@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
-	{ 'phaazon/hop.nvim' },
 {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
@@ -89,5 +88,5 @@ require("lazy").setup({
   "folke/todo-comments.nvim",
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {}
-}
+},
 })
