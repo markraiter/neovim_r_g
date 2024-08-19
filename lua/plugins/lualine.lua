@@ -9,12 +9,13 @@ local colors = {
     white = '#c6c6c6',
     red = '#ff5189',
     violet = '#d183e8',
-    grey = '#303030'
+    grey = '#303030',
+    yellow = '#FFFF00'
 }
 
 local bubbles_theme = {
     normal = {
-        a = {fg = colors.black, bg = colors.violet},
+        a = {fg = colors.black, bg = colors.yellow},
         b = {fg = colors.white, bg = colors.grey},
         c = {fg = colors.black, bg = colors.black}
     },
