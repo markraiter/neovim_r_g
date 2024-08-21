@@ -43,9 +43,12 @@ vim.opt.fillchars = {
     vert = "│",
     fold = "⠀",
     eob = " ", -- suppress ~ at EndOfBuffer
-    -- diff = "⣿", -- alternatives = ⣿ ░ ─ ╱
+    diff = "⣿", -- alternatives = ⣿ ░ ─ ╱
     msgsep = "‾",
     foldopen = "▾",
     foldsep = "│",
     foldclose = "▸"
 }
+
+-- Font
+vim.opt.guifont = "FiraCode Nerd Font"

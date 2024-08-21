@@ -15,5 +15,17 @@ kanagawa = 'kanagawa'
 onedark = 'onedark'
 dracula = 'dracula'
 tokyonight = 'tokyonight'
+nord = 'nord'
+solarized = 'solarized'
+gruvbox = 'gruvbox'
+monokai = 'monokai'
+catppuccin = 'catppuccin'
+material = 'material'
+nightfox = 'nightfox'
+everforest = 'everforest'
+ayu = 'ayu'
 
 SetColor(kanagawa)
+
+
+
